@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>fotograf</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #dfe9f3);
+      color: #1f2937;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+      overflow: hidden;
+    }
+    .header {
+      padding: 40px 40px 30px;
+      border-bottom: 3px solid #8b6f47;
+      background: linear-gradient(135deg, #f9f5f0, #fef7f2);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      color: #8b6f47;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .content {
+      padding: 40px;
+    }
+    .image-box {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .image-box img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .image-box img:hover {
+      transform: scale(1.02);
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #4b5563;
+      margin: 0 0 24px;
+      text-align: justify;
+    }
+    .link-section {
+      text-align: center;
+      padding: 20px 0;
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      background: linear-gradient(135deg, #8b6f47, #a0845a);
+      color: white;
+      padding: 16px 32px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(139, 111, 71, 0.3);
+    }
+    a:hover {
+      background: linear-gradient(135deg, #a0845a, #8b6f47);
+      box-shadow: 0 8px 20px rgba(139, 111, 71, 0.4);
+      transform: translateY(-2px);
+    }
+    @media (max-width: 700px) {
+      .header {
+        padding: 25px 20px 20px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .content {
+        padding: 25px 20px;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>fotograf</h1>
+    </div>
+    <div class="content">
+      <div class="image-box">
+        <img src="fotograf.jpg" alt="Eğitim İnfografisi" />
+      </div>
+      <p>
+        Bu sayfada eğitim sistemi, kariyerler ve sosyal roller hakkında detaylı bilgiler bulabilirsiniz. 
+        Fotoğraf, zaman çizelgesi, roller, sorumluluklardan başlayarak üniversite ve meslek hayatına kadar 
+        tüm aşamaları göstermektedir.
+      </p>
+      <div class="link-section">
+        <a href="https://www.meb.gov.tr" target="_blank" rel="noopener">Eğitim Bakanlığı Sitesini Ziyaret Et</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
